@@ -8,9 +8,11 @@ fun main(args: Array<String>) {
 
     println("Digite uma idade qualquer: ")
     var idade01 = Scanner(System.`in`)
-    var resposta01 = idade01.nextLine()
+    var resposta01 = idade01.nextInt()
 
-    
-
-
+    if (resposta01 > 12 && resposta01 < 18){
+        println("ADOLESCENTE (idade entre 13 e 17 anos).")
+    }else{
+        println("NÃO ADOLECENTE (idade não está entre 13 e 17 anos).")
+    }
 }
