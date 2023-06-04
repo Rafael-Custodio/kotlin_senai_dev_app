@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:background="#9E9D9D">
+    <Button
+            android:text="Converter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintVertical_bias="0.178"/>
+    <TextView
+            android:text="0.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txt_result"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.742" app:layout_constraintHorizontal_bias="0.489"
+            android:textSize="24sp" android:typeface="normal" android:textColor="#FF0000" android:textStyle="bold"
+            android:textAlignment="center"/>
+    <TextView
+            android:layout_width="293dp"
+            android:layout_height="49dp"
+            android:text="Informe quantos reais serão convertidos:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.223"
+            android:textSize="20sp" android:textColor="#FF0000" android:textAlignment="center"
+            android:id="@+id/textView" android:textStyle="bold" android:typeface="normal"/>
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/cmp_preco"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.097" android:id="@+id/radioGroup"
+            android:checkedButton="@id/rd_dolar">
+        <RadioButton
+                android:text="Dolar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/rd_dolar" android:textSize="16sp"
+                android:textStyle="bold" android:textColor="#000000"/>
+        <RadioButton
+                android:text="Euro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/rd_euro" android:textSize="16sp"
+                android:textStyle="bold" android:textColor="#000000"/>
+        <RadioButton
+                android:text="Iene"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/rd_iene" android:textSize="16sp"
+                android:textStyle="bold" android:textColor="#000000"/>
+    </RadioGroup>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/cmp_preco"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintVertical_bias="0.073" android:textAlignment="center" android:hint="R$ 0.00"
+            android:textSize="16sp" android:textStyle="bold" android:textColor="#000000"/>
+    <TextView
+            android:text="Valor Convertido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.524" android:typeface="normal" android:textSize="20sp"
+            android:textColor="#FF0000" android:textStyle="bold" android:textAlignment="center"/>
+    <TextView
+            android:text="CONVERSOR DE MOEDAS"
+            android:layout_width="341dp"
+            android:layout_height="44dp" android:id="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:textStyle="bold"
+            android:textColor="#062FFF"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.49"
+            android:textSize="28sp" android:textAlignment="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
