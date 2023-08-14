@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+
+
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cardPet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:background="#ffffff"
+            android:layout_marginVertical="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="26dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+    >
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/imgPet"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/baseline_pets_24"/>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:id="@+id/nomePet"
+                        android:textSize="24sp"
+                        tools:text="Nome"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                android:fontFamily="@font/mochiy_pop_p_one"/>
+
+                <TextView
+                        android:id="@+id/localPet"
+                        tools:text="Local"
+                        android:textColor="#5f5c6b"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_semibold"
+                />
+
+                <TextView
+                        android:id="@+id/descricaoPet"
+                        tools:text="Descrição"
+                        android:textColor="#5f5c6b"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_semibold"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:borderWidth="2dp"
+            app:fabCustomSize="60dp"
+            app:maxImageSize="30dp"
+            app:tint="@color/laranja"
+            android:src="@drawable/baseline_pets_24"
+            android:backgroundTint="@color/white"
+            app:layout_constraintHorizontal_bias="1.1"
+            app:layout_constraintVertical_bias="1.4"
+            app:layout_constraintTop_toTopOf="@+id/cardPet"
+            app:layout_constraintStart_toStartOf="@+id/cardPet"
+            app:layout_constraintEnd_toEndOf="@+id/cardPet"
+            app:layout_constraintBottom_toBottomOf="@+id/cardPet"
+            />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
